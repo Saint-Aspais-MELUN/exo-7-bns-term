@@ -1,4 +1,7 @@
 from exercices.exercice2 import *
 
-def test_tri_iteratif():
-    assert tri_iteratif([41, 55, 21, 18, 12, 6, 25]) == [6, 12, 18, 21, 25, 41, 55]
+liste_eleves = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+liste_notes = [1, 40, 80, 60, 58, 80, 75, 80, 60, 24]
+
+def test_meilleures_notes():
+    assert meilleures_notes() == (80, 3, ['c', 'f', 'h'])
